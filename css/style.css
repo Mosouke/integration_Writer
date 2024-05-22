@@ -123,10 +123,10 @@ header {
     align-items: center;
     gap: 20px;
     border-radius: 25px;
-    padding: 10px 20px;
+    
 }
 
-form {
+header form {
     display: flex;
     align-items: center;
     margin: 0;
@@ -305,11 +305,11 @@ form h2 {
     align-items: center;
 }
 
-form div {
+main form div {
     margin-bottom: 15px;
 }
 
-form label {
+ main form label {
     display: block;
     color: var(--color6);
     font-size: 16px;
@@ -371,4 +371,33 @@ form a:hover {
 
 form p {
     margin-bottom: 0;
+}
+
+/* main page article detail */
+
+.page_arte {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.page_arte h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--color6);
+}
+
+.page_arte p {
+    padding-bottom: 20px;
+    color: var(--color6);
+    line-height: 24px;
+}
+
+.page_arte img {
+    width: 90%;
+    height: 216px;
+    margin: auto;
+    object-fit: fill;
 }
