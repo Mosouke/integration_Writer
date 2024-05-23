@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2bb90c57b5.js" crossorigin="anonymous"></script>
+    <title>Article</title>
+</head>
+<body>
+        <div class="contener1440" id="flx">
+            <a href="/">
+                <h1>Writer</h1>
+            </a>
+            <div id="add_article">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="list_article.htm">My Article</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </nav>
+                <a href="/login.html" class="login-link">Login</a>
+                <a href="#"><img src="img/picturs profil.png" alt="picturs of profil">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="contener960">
+        <section >
+            <form action="serche" method="post" id="left">
+                <h2>Article</h2>
+                <div class="choose_category" id="choose_category2">
+                    <ul>
+                        <li>
+                            <input type="radio" 
+                            id="all"
+                            name="choose"
+                            value="all">
+                            <label for="all" class="toggle-btn">All <i class="fa-solid fa-angle-down"></i></label>
+                        </li>
+                        <li>
+                            <input type="radio" 
+                            id="published"
+                            name="choose"
+                            value="published">
+                            <label for="published" class="toggle-btn">Published <i class="fa-solid fa-angle-down"></i></label>
+                        </li>
+                        <li>
+                            <input type="radio" 
+                            id="draft"
+                            name="choose"
+                            value="draft">
+                            <label for="draft" class="toggle-btn">Draft <i class="fa-solid fa-angle-down"></i></label>
+                        </li>
+                        <li>
+                            <input type="radio" 
+                            id="archived"
+                            name="choose"
+                            value="archived">
+                            <label for="archived" class="toggle-btn">Archived <i class="fa-solid fa-angle-down"></i></label>
+                        </li>
+                        <li>
+                            <input type="radio" 
+                            id="featured"
+                            name="choose"
+                            value="featured">
+                            <label for="featured" class="toggle-btn">Featured  <i class="fa-solid fa-angle-down"></i></label>
+                        </li>
+                        <li>
+                            <input type="radio" 
+                            id="unlisted"
+                            name="choose"
+                            value="unlisted">
+                            <label for="unlisted" class="toggle-btn">Unlisted <i class="fa-solid fa-angle-down"></i></label>
+                        </li>
+                    </ul>                    
+                </div>
+                <div class="search-box">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search..." name="search">
+                </div>
+            </form> 
+        </section>
+        <section >
+            <div id="border">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>View</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A comprehensive guide to building a personal brand</td>
+                            <td class="colorG">15/02/2024</td>
+                            <td><a href="#">View</a></td>
+                            <td><a href="#">Edit</a></td>
+                            <td><a href="#" class="colorR">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>A comprehensive guide to building a personal brand</td>
+                            <td class="colorG">15/02/2024</td>
+                            <td><a href="#">View</a></td>
+                            <td><a href="#">Edit</a></td>
+                            <td><a href="#" class="colorR">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>A comprehensive guide to building a personal brand</td>
+                            <td class="colorG">15/02/2024</td>
+                            <td><a href="#">View</a></td>
+                            <td><a href="#">Edit</a></td>
+                            <td><a href="#" class="colorR">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>A comprehensive guide to building a personal brand</td>
+                            <td class="colorG">15/02/2024</td>
+                            <td><a href="#">View</a></td>
+                            <td><a href="#">Edit</a></td>
+                            <td><a href="#" class="colorR">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>A comprehensive guide to building a personal brand</td>
+                            <td class="colorG">15/02/2024</td>
+                            <td><a href="#">View</a></td>
+                            <td><a href="#">Edit</a></td>
+                            <td><a href="#" class="colorR">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contener960">
+            <div class="sos_med">
+                <a href="#"><img src="img/pictur twiter.svg" alt="link twiter"></a>
+                <a href="#"><img src="img/picturs facbook.svg" alt="link facbook"></a>
+                <a href="#"><img src="img/picturs insta.svg" alt="link instagram"></a>
+            </div>
+            <p>© 2024 Writer</p>
+        </div>
+    </footer>
+</body>
+</html>

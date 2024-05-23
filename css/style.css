@@ -40,6 +40,7 @@ ul {
     display: flex;
     justify-content: space-around;
     padding-bottom: 40px;
+    padding-left: 0;
 }
 
 h1 {
@@ -121,7 +122,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 30px;
+    padding: 10px 30px;
 }
 
 #form {
@@ -136,6 +137,7 @@ header form {
     display: flex;
     align-items: center;
     margin: 0;
+    padding: 0;
 }
 
 .search-box {
@@ -154,7 +156,7 @@ header form {
     padding: 10px;
     font-size: 16px;
     color: var(--color5);
-    width: 200px;
+    width: -webkit-fill-available;
 }
 
 .search-box button {
@@ -295,7 +297,7 @@ footer img {
 form {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 20px;
     gap: 20px;
 }
@@ -428,6 +430,10 @@ form p {
     color: var(--color6);
     font-size: 14px;
     font-weight: 500;
+
+    &:hover {
+        color: var(--color5);
+    }
 }
 
 /* formulair add_article */
@@ -445,12 +451,18 @@ form p {
     font-size: 14px;
 }
 
-#choose_category ul {
+#choose_category1 ul {
     justify-content: space-between;
     padding: 10px 0;
 }
 
-#choose_category ul input {
+#choose_category2 ul{
+    justify-content: left;
+    padding: 10px 0;
+    gap: 20px;
+}
+
+.choose_category ul input {
     display: none;
 }
 
@@ -480,7 +492,32 @@ form p {
     color: var(--color1);
 }
 
-#art:checked + .toggle-btn {
+#all:checked + .toggle-btn {
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+#published:checked + .toggle-btn {
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+#draft:checked + .toggle-btn {
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+#featured:checked + .toggle-btn {
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+#unlisted:checked + .toggle-btn {
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+#archived:checked + .toggle-btn {
     background-color: var(--color5);
     color: var(--color1);
 }
@@ -508,4 +545,75 @@ form p {
 
 .flx_end input[type="submit"] {
     color: var(--color6);
+}
+
+#left h2 {
+    text-align: left;
+    margin: 0;
+}
+
+/* style du tableu */
+
+#border {
+    border: 1px solid var(--color3);
+    border-radius: 20px;
+    margin: 25px 20px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid transparent;    
+}
+
+.styled-table thead tr {
+    color: var(--color6);
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid var(--color3);
+    
+}
+
+.styled-table th {
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.styled-table td {
+    padding: 25px 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid var(--color3);
+}
+
+.styled-table tbody tr:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.styled-table tbody tr a {
+    color: var(--color4);
+    font-weight: 700;
+}
+
+.styled-table tbody tr a:hover {
+    color: var(--color6);
+}
+
+.colorR {
+    color: #e63946 !important;
+}
+
+.colorR:hover {
+    color: var(--color6) !important;
+}
+
+.colorG {
+    color: #4f966e;
 }
