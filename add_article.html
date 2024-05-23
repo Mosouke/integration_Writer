@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2bb90c57b5.js" crossorigin="anonymous"></script>
+    <title>New article</title>
+</head>
+<body>
+    <header>
+        <div class="contener1440" id="flx">
+            <a href="/">
+                <h1>Writer</h1>
+            </a>
+            <div id="add_article">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Article</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </nav>
+                <a href="/login.html" class="login-link">Login</a>
+                <a href="#"><img src="img/picturs profil.png" alt="picturs of profil">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contener512 add_new">
+            <form action="add_article" method="post">
+                <legend>New Blog</legend>
+                <div>
+                    <label for="title" class="marg1">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter your title" required>
+                </div>
+                <div>
+                    <label for="content" class="marg1">Write your post</label>
+                    <textarea name="content" id="content" cols="30" rows="10" placeholder="Start writing here..." required></textarea>
+                </div>
+                <div id="choose_category">
+                    <legend>Add a category</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" id="technology" name="category" value="technology">
+                            <label for="technology" class="toggle-btn">Technology</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="science" name="category" value="science">
+                            <label for="science" class="toggle-btn">Science</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="business" name="category" value="business">
+                            <label for="business" class="toggle-btn">Business</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="art" name="category" value="art">
+                            <label for="art" class="toggle-btn">Art</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flx_end">
+                    <label for="upload_image" >Upload Image</label>
+                    <input type="file" id="upload_image" 
+                    name="picture" 
+                    accept="image/png, image/jpeg, image/svg" 
+                    multiple/>
+                    <input type="submit" value="Publish">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="contener960">
+            <div class="sos_med">
+                <a href="#"><img src="img/picturs discord.svg" alt="link discord"></a>
+                <a href="#"><img src="img/pictur twiter.svg" alt="link twiter"></a>
+                <a href="#"><img src="img/picturs insta.svg" alt="link instagram"></a>
+            </div>
+            <p>© 2024 Writer</p>
+        </div>
+    </footer>
+</body>
+</html>
